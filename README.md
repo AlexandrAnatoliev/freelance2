@@ -1,7 +1,8 @@
 <div align="center">
+
   <h1>HTML/CSS-сниппет: Баннер согласия на использование cookie</h1>
 
-  ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/freelance1.svg?style=flat)
+  ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/freelance2.svg?style=flat)
   ![Version 0.3.1](https://img.shields.io/badge/Version-0.3.1-orange.svg)
   ![Forks](https://img.shields.io/github/forks/AlexandrAnatoliev/freelance2.svg?style=flat)
   ![GitHub repo size](https://img.shields.io/github/repo-size/AlexandrAnatoliev/freelance2)
@@ -20,6 +21,9 @@
 
 * [Техническое задание](#technical-specifications)
 * [Установка](#intalling)
+* [Демо](#demo)
+* [Как это работает](#how-work-it)
+* [Ограничения](#restrictions)
 
 ---
 
@@ -140,3 +144,40 @@
 6. Для сайта-калькулятора: вставьте перед `</body>` в основном шаблоне страницы.
 
 Сниппет не требует подключения дополнительных файлов, JS, PHP или библиотек.
+
+---
+
+<div align="center">
+  <a id="demo"></a>
+  <h2>Демо</h2>
+</div>
+
+Откройте `cookie-banner.html` в браузере. Баннер появится внизу страницы.
+Нажмите «Хорошо» — баннер исчезнет. После обновления страницы он снова появится.
+
+---
+
+<div align="center">
+  <a id="how-work-it"></a>
+  <h2>Как это работает</h2>
+</div>
+
+Сниппет использует скрытый `<input type="checkbox">` и `<label>`.
+Клик по кнопке «Хорошо» отмечает чекбокс, а CSS-селектор 
+`#cookie-toggle:checked ~ .cookie-banner` скрывает баннер.
+
+JavaScript, cookie, localStorage и серверная логика не используются.
+
+---
+
+<div align="center">
+  <a id="restrictions"></a>
+  <h2>Ограничения</h2>
+</div>
+
+- Согласие не сохраняется между заходами и обновлениями страницы.
+- Cookie и localStorage не используются.
+- Баннер не является юридически полноценным механизмом согласия - 
+    это только визуальное уведомление.
+- Некоторые браузеры могут восстанавливать состояние чекбокса после перезагрузки. 
+    Для снижения риска в разметке можно указать `autocomplete="off"` у `#cookie-toggle`.
