@@ -8,14 +8,15 @@
   </head>
 
   <body>
+
     <!-- ================= Cookie banner (start) ================= -->
     <style>
-      /* 1. Прячем чекбокс (но он работает — label переключает его) */
+      /* прячем чекбокс */
       #cookie-toggle {
         display: none;
       }
 
-      /* 2. box-sizing — только для элементов баннера, страницу не трогаем */
+      /* width - ширина баннера, только для элементов баннера */
       .cookie-banner,
       .cookie-banner *,
       .cookie-banner *::before,
@@ -23,7 +24,7 @@
         box-sizing: border-box;
       }
 
-      /* 3. Контейнер баннера */
+      /* контейнер баннера */
       .cookie-banner {
         position: fixed;
         bottom: 0;
@@ -45,7 +46,7 @@
         transition: transform 0.4s ease, opacity 0.4s ease;
       }
 
-      /* 4. Текст — сбрасываем margin/padding от p на чужой странице */
+      /* текст */
       .cookie-banner_text {
         flex: 1;
         min-width: 220px;
@@ -55,7 +56,7 @@
         font: inherit;
       }
 
-      /* 5. «Кнопка» (label) */
+      /* кнопка */
       .cookie-banner_btn {
         display: inline-block;
         padding: 10px 28px;
@@ -74,22 +75,24 @@
         transition: background 0.2s ease, transform 0.1s ease;
       }
 
+      /* при наведении кнопка темнеет */
       .cookie-banner_btn:hover {
         background: #2b8ce8;
       }
 
+      /* при нажатии кнопка уменьшается */
       .cookie-banner_btn:active {
         transform: scale(0.97);
       }
 
-      /* 6. Клик по label → чекбокс отмечен → баннер уезжает */
+      /* клик по label -> чекбокс отмечен -> баннер уезжает */
       #cookie-toggle:checked ~ .cookie-banner {
         transform: translateY(100%);
         opacity: 0;
         pointer-events: none;
       }
 
-      /* 7. Мобильный вид */
+      /* мобильный вид */
       @media (max-width: 600px) {
         .cookie-banner {
           flex-direction: column;
@@ -111,6 +114,7 @@
       <label for="cookie-toggle" class="cookie-banner_btn">Хорошо</label>
     </div>
     <!-- ================= Cookie banner (end) ================= -->
+
   </body>
 </html>
 
