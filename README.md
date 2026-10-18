@@ -2,7 +2,7 @@
   <h1>HTML/CSS-сниппет: Баннер согласия на использование cookie</h1>
 
   ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/freelance1.svg?style=flat)
-  ![Version 0.1.2](https://img.shields.io/badge/Version-0.1.2-orange.svg)
+  ![Version 0.2.1](https://img.shields.io/badge/Version-0.2.1-orange.svg)
   ![Forks](https://img.shields.io/github/forks/AlexandrAnatoliev/freelance2.svg?style=flat)
   ![GitHub repo size](https://img.shields.io/github/repo-size/AlexandrAnatoliev/freelance2)
   
