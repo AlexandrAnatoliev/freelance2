@@ -3,7 +3,7 @@
   <h1>HTML/CSS-сниппет: Баннер согласия на использование cookie</h1>
 
   ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/freelance2.svg?style=flat)
-  ![Version 0.3.3](https://img.shields.io/badge/Version-0.3.3-orange.svg)
+  ![Version 1.0.0](https://img.shields.io/badge/Version-1.0.0-orange.svg)
   ![Forks](https://img.shields.io/github/forks/AlexandrAnatoliev/freelance2.svg?style=flat)
   ![GitHub repo size](https://img.shields.io/github/repo-size/AlexandrAnatoliev/freelance2)
   
@@ -117,8 +117,6 @@
 - [x] не делать кнопку "Отклонить"
 - [x] не считать количество показов или нажатий
 
-* [Установка](#intalling)
-
 ---
 
 <div align="center">
@@ -128,9 +126,13 @@
 
 1. Откройте `cookie-banner.html`.
 2. Скопируйте только фрагмент между комментариями
-   `<!-- ================= Cookie banner (start) ================= -->`
+```
+   <!-- ================= Cookie banner (start) ================= -->
+```
    и
-   `<!-- ================= Cookie banner (end) ================= -->`.
+```
+   <!-- ================= Cookie banner (end) ================= -->
+```
    В него входят:
    - блок `<style>` со стилями баннера;
    - `<input type="checkbox" id="cookie-toggle">`;
